@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  north_america:
+    build: ./north-america
+    ports:
+      - "8080:80"
+    container_name: north-america-birds
+
+  south_america:
+    build: ./south-america
+    ports:
+      - "8081:80"
+    container_name: south-america-birds
+
+  europe:
+    build: ./europe
+    ports:
+      - "8082:80"
+    container_name: europe-birds
+
+  asia:
+    build: ./asia
+    ports:
+      - "8083:80"
+    container_name: asia-birds
+
+  australia:
+    build: ./australia
+    ports:
+      - "8084:80"
+    container_name: australia-birds
+
+  africa:
+    build: ./africa
+    ports:
+      - "8085:80"
+    container_name: africa-birds
