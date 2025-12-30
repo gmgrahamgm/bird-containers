@@ -4,13 +4,13 @@ services:
   rideshare:
     build: ./rideshare
     ports:
-      - "8080:80"
+      - "8081:81"
     container_name: rideshare
 
   food:
     build: ./food
     ports:
-      - "8081:80"
+      - "8080:80"
     container_name: food
 
   music:
