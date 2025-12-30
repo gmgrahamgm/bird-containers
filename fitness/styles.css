@@ -195,3 +195,13 @@ body {
         gap: 15px;
     }
 }
+
+.bottom-logo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+    z-index: 1000;
+}
