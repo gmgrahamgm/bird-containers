@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirdPool - Rideshare for Birds</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">BirdPool</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Fly Together, Save Together</h1>
+            <p class="hero-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+            <button class="cta-button" onclick="showAlert('Welcome to BirdPool!')">Get Started</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/bird1.jpg" alt="Hero Bird">
+        </div>
+    </section>
+
+    <section class="pricing">
+        <h2>Choose Your Plan</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <div class="card-image">
+                    <img src="images/bird1.jpg" alt="Basic Plan">
+                </div>
+                <h3>Basic</h3>
+                <p class="price">$9.99/month</p>
+                <ul class="features">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Consectetur adipiscing</li>
+                    <li>Sed do eiusmod tempor</li>
+                </ul>
+                <button class="book-button" onclick="bookRide(this, 'Basic')">Book Now</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="badge">Popular</div>
+                <div class="card-image">
+                    <img src="images/bird2.jpg" alt="Premium Plan">
+                </div>
+                <h3>Premium</h3>
+                <p class="price">$19.99/month</p>
+                <ul class="features">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Consectetur adipiscing</li>
+                    <li>Sed do eiusmod tempor</li>
+                    <li>Incididunt ut labore</li>
+                </ul>
+                <button class="book-button" onclick="bookRide(this, 'Premium')">Book Now</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="card-image">
+                    <img src="images/bird3.jpg" alt="Flock Plan">
+                </div>
+                <h3>Flock</h3>
+                <p class="price">$29.99/month</p>
+                <ul class="features">
+                    <li>Lorem ipsum dolor sit</li>
+                    <li>Consectetur adipiscing</li>
+                    <li>Sed do eiusmod tempor</li>
+                    <li>Incididunt ut labore</li>
+                    <li>Dolore magna aliqua</li>
+                </ul>
+                <button class="book-button" onclick="bookRide(this, 'Flock')">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+
+        function bookRide(button, plan) {
+            button.textContent = 'Booked!';
+            button.style.backgroundColor = '#0d3a5c';
+            button.disabled = true;
+            alert('Successfully booked ' + plan + ' plan!');
+        }
+    </script>
+</body>
+
+</html>

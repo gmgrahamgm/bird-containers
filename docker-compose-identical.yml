@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  north_america_1:
+    build: ./north-america
+    ports:
+      - "8080:80"
+    container_name: north-america-1
+
+  north_america_2:
+    build: ./north-america
+    ports:
+      - "8081:80"
+    container_name: north-america-2
+
+  north_america_3:
+    build: ./north-america
+    ports:
+      - "8082:80"
+    container_name: north-america-3
+
+  north_america_4:
+    build: ./north-america
+    ports:
+      - "8083:80"
+    container_name: north-america-4
+
+  north_america_5:
+    build: ./north-america
+    ports:
+      - "8084:80"
+    container_name: north-america-5

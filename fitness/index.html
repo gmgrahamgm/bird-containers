@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Fit - Fitness Training</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <h1 class="brand">Flight Fit</h1>
+            <nav class="nav">
+                <a href="#">Programs</a>
+                <a href="#">Trainers</a>
+                <a href="#">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Transform Your Wings</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt</p>
+        </div>
+    </section>
+
+    <main class="programs">
+        <h2 class="programs-title">Choose Your Training Level</h2>
+
+        <div class="program-grid">
+            <div class="program-box">
+                <div class="program-header">
+                    <img src="images/bird1.jpg" alt="Beginner Program">
+                    <div class="overlay">
+                        <h3>Beginner</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <ul class="program-features">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                    </ul>
+                    <button class="start-button" onclick="startTraining(this, 'Beginner')">Start Training</button>
+                    <div class="progress-bar" style="display: none;">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-box">
+                <div class="program-header">
+                    <img src="images/bird2.jpg" alt="Intermediate Program">
+                    <div class="overlay">
+                        <h3>Intermediate</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <ul class="program-features">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                        <li>Ut labore dolore</li>
+                    </ul>
+                    <button class="start-button" onclick="startTraining(this, 'Intermediate')">Start Training</button>
+                    <div class="progress-bar" style="display: none;">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-box">
+                <div class="program-header">
+                    <img src="images/bird3.jpg" alt="Advanced Program">
+                    <div class="overlay">
+                        <h3>Advanced</h3>
+                    </div>
+                </div>
+                <div class="program-content">
+                    <ul class="program-features">
+                        <li>Lorem ipsum dolor</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                        <li>Ut labore dolore</li>
+                        <li>Magna aliqua</li>
+                    </ul>
+                    <button class="start-button" onclick="startTraining(this, 'Advanced')">Start Training</button>
+                    <div class="progress-bar" style="display: none;">
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function startTraining(button, level) {
+            const programBox = button.closest('.program-box');
+            const progressBar = programBox.querySelector('.progress-bar');
+            const progressFill = programBox.querySelector('.progress-fill');
+
+            button.style.display = 'none';
+            progressBar.style.display = 'block';
+
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 100) {
+                    clearInterval(interval);
+                    button.textContent = 'Training Started!';
+                    button.style.display = 'block';
+                    button.style.backgroundColor = '#0d3a5c';
+                    button.disabled = true;
+                    progressBar.style.display = 'none';
+                } else {
+                    width += 2;
+                    progressFill.style.width = width + '%';
+                }
+            }, 30);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chirp Music - Streaming Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="brand">Chirp Music</h1>
+            <p class="tagline">Lorem ipsum dolor sit amet consectetur</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="featured-section">
+            <div class="featured-content">
+                <h2>Stream Your Favorite Songs</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua</p>
+            </div>
+            <div class="featured-images">
+                <div class="image-stack">
+                    <img src="images/bird1.jpg" alt="Featured 1" class="stack-image">
+                    <img src="images/bird2.jpg" alt="Featured 2" class="stack-image">
+                    <img src="images/bird3.jpg" alt="Featured 3" class="stack-image">
+                </div>
+            </div>
+        </section>
+
+        <section class="plans-section">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <div class="plans-list">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Solo</h3>
+                        <p class="plan-price">$9.99<span>/month</span></p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="toggleSubscribe(this)">Subscribe</button>
+                </div>
+
+                <div class="plan-card highlighted">
+                    <div class="ribbon">Best Value</div>
+                    <div class="plan-header">
+                        <h3>Duo</h3>
+                        <p class="plan-price">$14.99<span>/month</span></p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                        <li>Ut labore et dolore</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="toggleSubscribe(this)">Subscribe</button>
+                </div>
+
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>Family</h3>
+                        <p class="plan-price">$19.99<span>/month</span></p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Lorem ipsum dolor sit</li>
+                        <li>Consectetur adipiscing</li>
+                        <li>Sed do eiusmod</li>
+                        <li>Tempor incididunt</li>
+                        <li>Ut labore et dolore</li>
+                        <li>Magna aliqua</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="toggleSubscribe(this)">Subscribe</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleSubscribe(button) {
+            if (button.textContent === 'Subscribe') {
+                button.textContent = 'Subscribed ✓';
+                button.style.backgroundColor = '#2d0d42';
+                button.style.transform = 'scale(0.95)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 200);
+            }
+        }
+    </script>
+</body>
+
+</html>

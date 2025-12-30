@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wing & Nest Realty</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="logo">Wing & Nest Realty</div>
+        <div class="contact-info">Lorem ipsum dolor | Contact</div>
+    </div>
+
+    <section class="hero-banner">
+        <h1>Find Your Perfect Nest</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+    </section>
+
+    <main class="listings-container">
+        <h2 class="listings-title">Featured Properties</h2>
+
+        <div class="property-list">
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/bird1.jpg" alt="Tree Hollow">
+                    <div class="property-badge">Featured</div>
+                </div>
+                <div class="property-info">
+                    <h3>Luxury Tree Hollow</h3>
+                    <p class="location">Lorem ipsum sector</p>
+                    <div class="specs">
+                        <span class="spec">3 Rooms</span>
+                        <span class="spec">2 Perches</span>
+                        <span class="spec">150 sqft</span>
+                    </div>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                    <div class="details-section" id="details1" style="display: none;">
+                        <p><strong>Additional Info:</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                    </div>
+                    <button class="details-button" onclick="toggleDetails('details1', this)">View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/bird2.jpg" alt="Cliff Ledge">
+                </div>
+                <div class="property-info">
+                    <h3>Cliff Ledge Residence</h3>
+                    <p class="location">Lorem dolor district</p>
+                    <div class="specs">
+                        <span class="spec">2 Rooms</span>
+                        <span class="spec">1 Perch</span>
+                        <span class="spec">120 sqft</span>
+                    </div>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                    <div class="details-section" id="details2" style="display: none;">
+                        <p><strong>Additional Info:</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                    </div>
+                    <button class="details-button" onclick="toggleDetails('details2', this)">View Details</button>
+                </div>
+            </div>
+
+            <div class="property-card">
+                <div class="property-image">
+                    <img src="images/bird3.jpg" alt="Bamboo Grove">
+                </div>
+                <div class="property-info">
+                    <h3>Bamboo Grove Estate</h3>
+                    <p class="location">Consectetur area</p>
+                    <div class="specs">
+                        <span class="spec">4 Rooms</span>
+                        <span class="spec">3 Perches</span>
+                        <span class="spec">200 sqft</span>
+                    </div>
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+                    </p>
+                    <div class="details-section" id="details3" style="display: none;">
+                        <p><strong>Additional Info:</strong></p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam.</p>
+                    </div>
+                    <button class="details-button" onclick="toggleDetails('details3', this)">View Details</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function toggleDetails(detailsId, button) {
+            const detailsSection = document.getElementById(detailsId);
+            const card = button.closest('.property-card');
+
+            if (detailsSection.style.display === 'none') {
+                detailsSection.style.display = 'block';
+                button.textContent = 'Hide Details';
+                card.style.height = 'auto';
+            } else {
+                detailsSection.style.display = 'none';
+                button.textContent = 'View Details';
+            }
+        }
+    </script>
+</body>
+
+</html>

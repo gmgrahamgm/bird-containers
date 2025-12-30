@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestEats - Food Delivery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2 class="logo">NestEats</h2>
+            <nav>
+                <a href="#" class="nav-item active">Menu</a>
+                <a href="#" class="nav-item">Orders</a>
+                <a href="#" class="nav-item">Account</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="page-header">
+                <h1>Delicious Meals Delivered</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod</p>
+            </header>
+
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/bird1.jpg" alt="Seeds Package">
+                        <span class="badge">Popular</span>
+                    </div>
+                    <div class="item-details">
+                        <h3>Premium Seeds Mix</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                        <div class="item-footer">
+                            <span class="price">$12.99</span>
+                            <button class="order-button" onclick="placeOrder(this)">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/bird2.jpg" alt="Insects Package">
+                    </div>
+                    <div class="item-details">
+                        <h3>Fresh Insects</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                        <div class="item-footer">
+                            <span class="price">$15.99</span>
+                            <button class="order-button" onclick="placeOrder(this)">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-image">
+                        <img src="images/bird3.jpg" alt="Premium Mix">
+                    </div>
+                    <div class="item-details">
+                        <h3>Gourmet Premium</h3>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+                        <div class="item-footer">
+                            <span class="price">$24.99</span>
+                            <button class="order-button" onclick="placeOrder(this)">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function placeOrder(button) {
+            const originalText = button.textContent;
+            button.innerHTML = '✓ Added';
+            button.style.backgroundColor = '#0d4527';
+
+            setTimeout(() => {
+                button.style.transform = 'scale(1.1)';
+                setTimeout(() => {
+                    button.style.transform = 'scale(1)';
+                }, 200);
+            }, 100);
+        }
+    </script>
+</body>
+
+</html>
