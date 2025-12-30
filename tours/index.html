@@ -3,121 +3,88 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Migration Tours - Travel Booking</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="refresh" content="0; url=https://www.mandai.com/en/bird-paradise.html">
+    <title>Redirecting...</title>
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <header class="main-header">
-            <div class="header-inner">
-                <h1 class="site-title">Migration Tours</h1>
-                <p class="site-tagline">Lorem ipsum dolor sit amet consectetur</p>
-            </div>
-        </header>
+    <p>Redirecting to Bird Paradise...</p>
+    <script>
+        window.location.href = "https://www.mandai.com/en/bird-paradise.html";
+    </script>
+</body>
 
-        <section class="destinations">
-            <div class="destinations-header">
-                <h2>Explore Amazing Destinations</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod</p>
-            </div>
-
-            <div class="destination-cards">
-                <div class="destination-card">
-                    <div class="card-image-wrapper">
-                        <img src="images/bird1.jpg" alt="Savanna">
-                        <div class="image-overlay">
-                            <h3>Savanna Adventure</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="highlights">
-                            <span class="highlight-tag">Popular</span>
-                            <span class="highlight-tag">5 Days</span>
-                        </div>
-                        <p class="destination-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                            eiusmod tempor incididunt ut labore</p>
-                        <div class="price-section">
-                            <span class="price">$899</span>
-                            <button class="book-tour-button" onclick="bookTour(this, 'Savanna Adventure')">Book
-                                Tour</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="card-image-wrapper">
-                        <img src="images/bird2.jpg" alt="Rainforest">
-                        <div class="image-overlay">
-                            <h3>Rainforest Expedition</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="highlights">
-                            <span class="highlight-tag">Adventure</span>
-                            <span class="highlight-tag">7 Days</span>
-                        </div>
-                        <p class="destination-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                            eiusmod tempor incididunt ut labore</p>
-                        <div class="price-section">
-                            <span class="price">$1299</span>
-                            <button class="book-tour-button" onclick="bookTour(this, 'Rainforest Expedition')">Book
-                                Tour</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="destination-card">
-                    <div class="card-image-wrapper">
-                        <img src="images/bird3.jpg" alt="Coastal">
-                        <div class="image-overlay">
-                            <h3>Coastal Paradise</h3>
-                        </div>
-                    </div>
-                    <div class="card-body">
-                        <div class="highlights">
-                            <span class="highlight-tag">Relaxing</span>
-                            <span class="highlight-tag">4 Days</span>
-                        </div>
-                        <p class="destination-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
-                            eiusmod tempor incididunt ut labore</p>
-                        <div class="price-section">
-                            <span class="price">$749</span>
-                            <button class="book-tour-button" onclick="bookTour(this, 'Coastal Paradise')">Book
-                                Tour</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+</html>
+<img src="images/bird2.jpg" alt="Rainforest">
+<div class="image-overlay">
+    <h3>Rainforest Expedition</h3>
+</div>
+</div>
+<div class="card-body">
+    <div class="highlights">
+        <span class="highlight-tag">Adventure</span>
+        <span class="highlight-tag">7 Days</span>
     </div>
+    <p class="destination-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+        eiusmod tempor incididunt ut labore</p>
+    <div class="price-section">
+        <span class="price">$1299</span>
+        <button class="book-tour-button" onclick="bookTour(this, 'Rainforest Expedition')">Book
+            Tour</button>
+    </div>
+</div>
+</div>
 
-    <div class="modal" id="bookingModal" style="display: none;">
-        <div class="modal-content">
-            <h3>Booking Confirmed!</h3>
-            <p id="modalText"></p>
-            <button class="modal-close" onclick="closeModal()">Close</button>
+<div class="destination-card">
+    <div class="card-image-wrapper">
+        <img src="images/bird3.jpg" alt="Coastal">
+        <div class="image-overlay">
+            <h3>Coastal Paradise</h3>
         </div>
     </div>
+    <div class="card-body">
+        <div class="highlights">
+            <span class="highlight-tag">Relaxing</span>
+            <span class="highlight-tag">4 Days</span>
+        </div>
+        <p class="destination-desc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+            eiusmod tempor incididunt ut labore</p>
+        <div class="price-section">
+            <span class="price">$749</span>
+            <button class="book-tour-button" onclick="bookTour(this, 'Coastal Paradise')">Book
+                Tour</button>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+</div>
 
-    <script>
-        function bookTour(button, tourName) {
-            const modal = document.getElementById('bookingModal');
-            const modalText = document.getElementById('modalText');
+<div class="modal" id="bookingModal" style="display: none;">
+    <div class="modal-content">
+        <h3>Booking Confirmed!</h3>
+        <p id="modalText"></p>
+        <button class="modal-close" onclick="closeModal()">Close</button>
+    </div>
+</div>
 
-            modalText.textContent = `Your ${tourName} tour has been successfully booked! Lorem ipsum dolor sit amet.`;
-            modal.style.display = 'flex';
+<script>
+    function bookTour(button, tourName) {
+        const modal = document.getElementById('bookingModal');
+        const modalText = document.getElementById('modalText');
 
-            button.textContent = 'Booked ✓';
-            button.style.backgroundColor = '#994400';
-            button.disabled = true;
-        }
+        modalText.textContent = `Your ${tourName} tour has been successfully booked! Lorem ipsum dolor sit amet.`;
+        modal.style.display = 'flex';
 
-        function closeModal() {
-            document.getElementById('bookingModal').style.display = 'none';
-        }
-    </script>
+        button.textContent = 'Booked ✓';
+        button.style.backgroundColor = '#994400';
+        button.disabled = true;
+    }
+
+    function closeModal() {
+        document.getElementById('bookingModal').style.display = 'none';
+    }
+</script>
 </body>
 
 </html>
