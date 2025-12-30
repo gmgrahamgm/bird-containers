@@ -4,29 +4,29 @@ services:
   rideshare_1:
     build: ./rideshare
     ports:
-      - "8080:80"
+      - "8090:80"
     container_name: rideshare-1
 
   rideshare_2:
     build: ./rideshare
     ports:
-      - "8081:80"
+      - "8091:80"
     container_name: rideshare-2
 
   rideshare_3:
     build: ./rideshare
     ports:
-      - "8082:80"
+      - "8092:80"
     container_name: rideshare-3
 
   rideshare_4:
     build: ./rideshare
     ports:
-      - "8083:80"
+      - "8093:80"
     container_name: rideshare-4
 
   rideshare_5:
     build: ./rideshare
     ports:
-      - "8084:80"
+      - "8094:80"
     container_name: rideshare-5

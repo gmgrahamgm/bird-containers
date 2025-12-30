@@ -4,35 +4,35 @@ services:
   rideshare:
     build: ./rideshare
     ports:
-      - "8081:81"
+      - "8090:80"
     container_name: rideshare
 
   food:
     build: ./food
     ports:
-      - "8080:80"
+      - "8091:80"
     container_name: food
 
   music:
     build: ./music
     ports:
-      - "8082:80"
+      - "8092:80"
     container_name: music
 
   realty:
     build: ./realty
     ports:
-      - "8083:80"
+      - "8093:80"
     container_name: realty
 
   fitness:
     build: ./fitness
     ports:
-      - "8084:80"
+      - "8094:80"
     container_name: fitness
 
   tours:
     build: ./tours
     ports:
-      - "8085:80"
+      - "8095:80"
     container_name: tours
