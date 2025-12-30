@@ -31,8 +31,8 @@ services:
       - "8094:80"
     container_name: fitness
 
-  tours:
-    build: ./tours
+  redirect:
+    build: ./redirect
     ports:
       - "8095:80"
-    container_name: tours
+    container_name: redirect
