@@ -1,38 +1,38 @@
 version: '3.8'
 
 services:
-  north_america:
-    build: ./north-america
+  rideshare:
+    build: ./rideshare
     ports:
       - "8080:80"
-    container_name: north-america-birds
+    container_name: rideshare
 
-  south_america:
-    build: ./south-america
+  food:
+    build: ./food
     ports:
       - "8081:80"
-    container_name: south-america-birds
+    container_name: food
 
-  europe:
-    build: ./europe
+  music:
+    build: ./music
     ports:
       - "8082:80"
-    container_name: europe-birds
+    container_name: music
 
-  asia:
-    build: ./asia
+  realty:
+    build: ./realty
     ports:
       - "8083:80"
-    container_name: asia-birds
+    container_name: realty
 
-  australia:
-    build: ./australia
+  fitness:
+    build: ./fitness
     ports:
       - "8084:80"
-    container_name: australia-birds
+    container_name: fitness
 
-  africa:
-    build: ./africa
+  tours:
+    build: ./tours
     ports:
       - "8085:80"
-    container_name: africa-birds
+    container_name: tours
